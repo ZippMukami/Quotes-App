@@ -13,6 +13,11 @@ export class QuoteSectionComponent implements OnInit {
     new Quotes(  4, 'Life is what happens when youre busy making other plans!', 'Stephen King', 'Gama', new Date, 0, 0 ),
     new Quotes(  5, 'You only live once, but if you do it right, once is enough!', 'Mae West', 'Gama', new Date, 0,0)
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDescription=this.quotes[index].showDescription;
+  };
+
   constructor() { }
 
   ngOnInit(): void {
