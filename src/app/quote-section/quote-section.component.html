@@ -8,7 +8,8 @@
         {{quote.id}} {{quote.quote}} {{quote.upvote}} {{quote.downvote}}
       </li>
       <button (click)="toggleDetails(i)">show quote</button>
-      <app-quote-details [quote]="quote"></app-quote-details>
+      <app-quote-details *ngIf='quote.showDescription' [quote]="quote"(done)="completeQuote($event,i)"></app-quote-details>
+
 
     </div>
   </ul>
