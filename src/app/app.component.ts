@@ -6,9 +6,7 @@ import { Quotes } from './quotes';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-quotes:Quotes[]=[
-  {id:1,quote:'Fake it till you make it!',author:'Budha', user:'Gama', date:new Date, upvote:0, downvote:0}
-];
+
 
 
 
