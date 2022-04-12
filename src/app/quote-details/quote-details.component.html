@@ -1,5 +1,23 @@
-<p>{{quote.author}}: {{quote.date| date}} => {{quote.user}}</p>
-<i class="fa-solid fa-thumbs-up"(click)="upvoting()"> {{quote.upvote}}</i>
+<div class="row">
+    <div class="col">
+       <p>Author: {{quote.author}}</p> 
+    </div>
+    <div class="col">
+        <p>Date: {{quote.date| date}}</p>
+    </div>
+    <div class="col">
+        <p>Posted by: {{quote.user}}</p>
+    </div>
+</div>
 
-<i class="fa-solid fa-thumbs-down" (click)="downvoting()">{{quote.downvote}}</i>
-<button class="btn btn-primary btn-md" (click)="quoteDone(true)">Delete Quote</button>
+<div class="row">
+    <div class="col">
+       <p><i class="fa-solid fa-thumbs-up"(click)="upvoting()"> {{quote.upvote}}</i></p> 
+    </div>
+    <div class="col">
+        <p><i class="fa-solid fa-thumbs-down" (click)="downvoting()">{{quote.downvote}}</i></p>
+    </div>
+    <div class="col">
+        <p><i class="fa-solid fa-circle-trash btn btn-sm btn-success" (click)="quoteDone(true)">delete</i></p>
+    </div>
+</div>

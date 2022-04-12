@@ -1,0 +1,23 @@
+.card{
+    height: 50vh;
+    width: 40vw;
+    margin-left: -50px;
+}
+
+.card:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.button{
+    width: 10vw;
+}
+
+.btn:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+li{
+    font-size: 30px;
+    font-weight: bolder;
+    list-style: none;
+}
