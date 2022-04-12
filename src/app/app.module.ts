@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { QuoteSectionComponent } from './quote-section/quote-section.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteSectionComponent,
     QuoteDetailsComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    NavbarComponent
   ],
   
   imports: [
