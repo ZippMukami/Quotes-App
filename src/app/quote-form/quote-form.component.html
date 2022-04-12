@@ -1,23 +1,21 @@
 <div class="container-fluid">
-  <h2 class="text-center">Create a new Goal</h2>
+  <h2 class="text-center mt-3">Create a new Quote</h2>
   <hr>
  
   
 
 </div>
 <div class="container">
-  <form (ngSubmit)="submitForm()" #quoteForm="ngForm">
+  <form class="card" (ngSubmit)="submitForm()" #quoteForm="ngForm">
     <div class="form-group">
 
       <label for="quote">Quote</label>
       <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote">  
-      {{newQuote.quote}}display
     </div>
     <div class="form-group">
 
       <label for="author">Author</label>
       <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
-      {{newQuote.author}}display
     </div>
     <div class="form-group">
 
@@ -38,6 +36,6 @@
       <input type='date' id="complete" [(ngModel)]="newQuote.date" required>
 
     </div> -->
-    <button type="submit" class="btn btn-success">Post Quote</button>
+    <button type="submit" class="btn btn-success mt-3">Post Quote</button>
   </form>        
 </div>
